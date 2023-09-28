@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import { Switch, Route, Redirect } from 'react-router-dom';
+
+import Layout from './components/Layout/Layout';
+import Student from './pages/Student';
+import Dean from './pages/Dean';
+import SlotBooking from './pages/SlotBooking';
+import SessionDetails from './pages/SessionDetails';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Layout>
+      <Switch>
+        <Route path='/' exact>
+          <Redirect to='/student' />
+        </Route>
+        <Route path='/student' exact>
+         <Student />
+        </Route>
+        <Route path='/dean'>
+         <Dean />
+        </Route>
+        <Route path='/slot'>
+          <SlotBooking />
+        </Route>
+        <Route path='/session'>
+          <SessionDetails />
+        </Route>
+      </Switch>
+    </Layout>
+
   );
 }
 

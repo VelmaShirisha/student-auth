@@ -1,0 +1,43 @@
+.header {
+  width: 80%;
+  height: 5rem;
+  display: flex;
+  padding: 0 10%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.795);
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-left:-30px;
+  font-size: 1.25rem;
+  margin-right: 104px;  
+}
+
+/*.nav li:nth-child(2) {
+  margin-right: 6rem; 
+}
+*/
+
+.nav a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.699);
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+  color: rgb(245, 245, 245);
+}

@@ -1,38 +1,197 @@
-.App {
+.login-container {
+  display: flex;
+  flex-direction: column; /* Arrange child elements vertically */
+  align-items: center; /* Center child elements horizontally */
+  margin: 20px; /* Add margin for spacing */
+  position: fixed;
+  margin-top: 180px;
+}
+
+.login-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 200%;
+  margin: 0 auto; /* Horizontally center the form */
+  position: relative;
+  top: 50%; /* Vertically center the form */
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center both horizontally and vertically */
+  padding-top: 0;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+
+h2 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form-group {
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label {
+  display: block;
+  margin-bottom: 6px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+input {
+  width: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  width: 40%;
+  padding: 10px;
+  background-color: rgb(53, 52, 52);
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 110px;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logout{
+  width: 20%;
+  padding: 10px;
+  background-color: rgb(53, 52, 52);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  float: right;
 }
+
+.logout:hover {
+  background-color: black;
+}
+
+.heading{
+ margin-left: 80px; 
+}
+
+.container {
+  display: flex; /* Make the container a flex container */
+  flex-direction: column; /* Arrange child elements vertically */
+  align-items: center; /* Center child elements horizontally */
+  margin: 20px; /* Add margin for spacing */
+  position: fixed;
+}
+
+.date-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 130%;
+  min-height: 20vh;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  margin-left: 100px;
+}
+
+.session-form {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+  min-height: 20vh;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-top: 30px;
+  align-items: center;
+  margin-left: 100px; 
+}
+
+.message{
+  padding-left: 90px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.button-container {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+
+
+.start-btn {
+  background-color: rgb(218, 214, 214);
+  color: black;
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-btn:hover {
+  background-color: rgba(50, 170, 226, 0.795);
+}
+
+
+.start-btn.selected {
+  background-color: rgba(50, 170, 226, 0.795);
+  color: white; 
+}
+
+.start-btn.disabled:hover {
+  background-color: rgb(218, 214, 214);
+  color: black;
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.start-button {
+  background-color: rgb(218, 214, 214);
+  color: black;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  margin-left: 12rem;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 90px; /* Adjust the width as needed */
+  height: 35px; /* Adjust the height as needed */
+}
+
+.start-button:hover {
+  background-color: rgba(50, 170, 226, 0.795);
+}
+
+
+.start-button.selected {
+  background-color: rgba(50, 170, 226, 0.795);
+  color: white; 
+}
+
+
